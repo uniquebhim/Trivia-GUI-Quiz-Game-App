@@ -19,12 +19,12 @@ class Quizinterface:
             150, 125, width=280, text="Some Question text", fill=THEME_COLOR, font=("Arial", 20, "italic"))
         self.canvas.grid(row=1, column=0, columnspan=2, pady=50)
 
-        true_button_image = PhotoImage(file="day_34/images/true.png")
+        true_button_image = PhotoImage(file="images/true.png")
         self.true_button = Button(
             image=true_button_image, highlightthickness=0, command=self.true_pressed)
         self.true_button.grid(row=2, column=0)
 
-        false_button_image = PhotoImage(file="day_34/images/false.png")
+        false_button_image = PhotoImage(file="images/false.png")
         self.false_button = Button(
             image=false_button_image, highlightthickness=0, command=self.false_pressed)
         self.false_button.grid(row=2, column=1)
